@@ -1,6 +1,6 @@
 node{
    stage('SCM Checkout'){
-       git credentialsId: 'git-creds', url: 'https://github.com/javahometech/my-app'
+       git credentialsId: 'git-creds', url: 'https://github.com/Dileep9652/Cricket.git'
    }
    stage('Mvn Package'){
      def mvnHome = tool name: 'maven', type: 'maven'
