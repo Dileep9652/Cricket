@@ -1,3 +1,3 @@
-FROM openjdk:12-alpine
-COPY target/Cricket-*.jar /demo.jar
-CMD ["java" , "-jar" , "/demo.jar"]
+FROM tomcat:8
+# Take the war and copy to webapps of tomcat
+COPY target/*.war /usr/local/tomcat/webapps/myweb.war
